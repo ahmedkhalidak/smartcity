@@ -1,0 +1,310 @@
+
+:root {
+   --dark-color: #19283f;
+   --green-color: #33d1cc;
+   --red-color: #ff3150;
+   --yellow-color: #ffc400;
+   --section-color: #eff7fa;
+   --orange:#f89d2a;
+ }
+ body {
+   font-family: 'Ubuntu', sans-serif;
+ }
+ .main-btn {
+   background-color: var(--green-color);
+   color: white;
+   padding: 0.5rem 1rem;
+ }
+ .main-btn:hover {
+   color: var(--yellow-color);
+ }
+ .main-title::after {
+   content: "";
+   width: 120px;
+   height: 2px;
+   background-color: var(--green-color);
+   position: absolute;
+   bottom: -20px;
+   left: 50%;
+   transform: translateX(-50%);
+ }
+ /* Start Navbar */
+ 
+ .navbar {
+   background-color:rgb(9, 12, 9);
+ }
+ .navbar .navbar-nav .nav-link {
+   color: white;
+ }
+ .navbar .navbar-nav .nav-link.active,
+ .navbar .navbar-nav .nav-link:focus,
+ .navbar .navbar-nav .nav-link:hover {
+   color: var(--green-color);
+ }
+ .navbar .search {
+   border-left: 1px solid var(--green-color);
+ }
+ .navbar .search svg {
+   color: var(--white-color);
+ }
+ .navbar .navbar-toggler {
+   color: white;
+   font-size: 25px;
+   border-color: white;
+ }
+ .navbar .navbar-toggler:focus {
+   box-shadow: none;
+ }
+ .navbar .navbar-toggler[aria-expanded="true"] {
+   border-color: var(--green-color);
+ }
+ .navbar img{
+  width: 110px;
+ }
+ .search-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+input[type="text"] {
+  width: 200px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px 0 0 4px;
+}
+
+button[type="submit"] {
+  padding: 10px 20px;
+  background-color: var(--green-color);
+  color: #fff;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+}
+
+ /* End Navbar */
+
+ /* Start Landing */
+ .landing .imgcity {
+   height: 600px;
+ }
+ .landing{
+  background-color: var(--section-color);
+ }
+ /* End Landing */
+
+/*  start slide */
+ 
+   .ak {
+    background-color: var(--section-color);
+  }
+
+/*end slide */
+
+
+/*  start main  */
+.main{
+  background-image: url("images/3.png");
+  opacity: 80% ;
+}
+/*  end main  */
+
+.problems{
+  background-color: var(--section-color);
+}
+/* cards */
+.sol{
+  background-image: url("images/6.png");
+ 
+}
+.sol .card{
+  gap: 20px;
+  padding: 40px;
+  margin: 20px;
+}
+/*Card animation*/
+.card:hover:hover {
+  transform: scale(1.1);
+  
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: top 0.8s ease-out;
+
+}
+
+.card-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px;
+  background-color: #145d004d;
+  color: #fff;
+  transition: bottom 0.8s ease-out;
+}
+
+.card:hover .card-content {
+  bottom: -10px;
+  background-color: #145d00;
+}
+.card:hover img{
+  object-fit: contain;
+  margin-bottom: 239px;
+}
+.card-content h3 {
+  margin: 0;
+  font-size: 1.2em;
+}
+
+.card-content p {
+  margin: 10px 0 0;
+  font-size: 0.9em;
+  line-height: 1.3;
+}
+
+/*change color btn*/
+.btn-primary {
+  color: #fff;
+  background-color:var(--dark-color);
+  border-color: #0d6efd;
+}
+
+/* start soultion */
+ .card1{
+  
+  background-size: auto;
+  
+  background-image:url(../images/bg-solution/ELECTRIC\ PUBLIC\ TRANSPORTATION2.png);
+  color: white;
+  font-size: large; 
+  
+  
+  
+}
+.soultion .card2{
+  background-image:url(../images/bg-solution/RENEWABLE\ ENERGY2.png);
+  background-size: cover;
+  color: rgb(0, 0, 0);
+}
+.soultion .card3{
+  background-image:url(../images/bg-solution/GREEN\ BULDING2.png);
+  background-size: auto;
+}
+.soultion .card4{
+  background-image:url(../images/bg-solution/WASTE\ MANAGMENT2.png);
+  background-size: cover
+}
+.soultion .card5{
+  background-image:url(../images/bg-solution/URBAN\ planning2.png);
+  color: white;
+  background-size: contain;
+}
+.soultion .card6{
+  background-image:url(../images/bg-solution/URBAN\ AGRICULTURE2.png);
+  background-size:auto;
+  color: white;
+}
+/* end soultion */
+
+/* Start Footer */
+.footer {
+  background-color: var(--dark-color);
+}
+.footer .copyright > span {
+  color: var(--green-color);
+}
+.footer .copyright div span {
+  color: var(--yellow-color);
+}
+.footer .contact ul svg {
+  width: 20px;
+  height: 20px;
+}
+.footer .facebook {
+  background-color: #1877f2;
+}
+.footer .twitter {
+  background-color: #1da1f2;
+}
+.footer .linkedin {
+  background-color: #0077b5;
+}
+.footer .youtube {
+  background-color: #ff0000;
+}
+/* End Footer */
+ 
+
+
+
+
+
+@media (min-width: 992px) and (max-width: 3000px) {
+ 
+  .card {
+    position: relative;
+    overflow: hidden;
+    width: 300px;
+    height: 400px;
+    box-shadow: 0 0 10px rgba(24, 174, 255, 0.3);
+    transition: transform 0.3s ease-out;
+  }
+}
+
+@media (max-width: 991px) {
+  .landing{
+    max-height: 500px;
+  }
+  *{
+      
+     box-sizing: border-box; 
+  }
+ .sol{
+   background-image: url("images/6.png");
+  
+ }
+ /*Card animation*/
+ .sol .card {
+  margin-left: -2px;
+  align-items: center;
+  justify-content: center;
+   position:relative;
+   overflow: hidden;
+   width: 250px;
+   height: 400px;
+   box-shadow: 0 0 10px rgba(24, 174, 255, 0.3);
+   transition: transform 0.3s ease-out;
+ }
+ .row>* {
+  flex-shrink: 0;
+  width: 100%;
+  max-width: 100%;
+  padding-right: calc(var(--bs-gutter-x) * .5);
+  padding-left: calc(var(--bs-gutter-x) * .5);
+  margin-top: var(--bs-gutter-y);
+  display: contents;
+   }
+  .row {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(var(--bs-gutter-y) * -1);
+    margin-right: calc(var(--bs-gutter-x) * -.5);
+    margin-left: calc(var(--bs-gutter-x) * -.5);
+    flex-direction: column;
+    align-content: center;
+}
+button, input, optgroup, select, textarea {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  margin-left: 85%;
+  margin-top: -23%;
+}
+}
